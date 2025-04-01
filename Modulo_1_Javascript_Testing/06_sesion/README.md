@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <strong>Sesión 5:</strong> Proyecto de localStorage
+        <strong>Sesión 6:</strong> Proyecto de localStorage
         <br>
         <strong>Fecha:</strong> 01/04/2025
         <br>
