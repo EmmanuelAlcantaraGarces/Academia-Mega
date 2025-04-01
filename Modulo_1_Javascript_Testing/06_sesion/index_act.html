@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notas Guardadas</title>
+  <style>
+
+  </style>
+</head>
+<body onload="mostraNotas ();">
+  <h1>Notas Guardadas</h1>
+  <textarea id="nota"></textarea>
+  <br>
+  <button onclick="guardarNota()">Guardar</button>
+  <button onclick="borrarNotas()">Borrar Todas</button>
+  <h2>Lista de notas</h2>
+  <ul id="listaNotas">
+
+  </ul>
+  <script>
+    function guardarNota () {
+      const texto = document.getElementById("nota").value.trim();
+
+      if (texto === "")
+        return;
+
+      let notas = JSON.parse(localStorage.getItem("notas")) || [];
+
+      notas.push(texto);
+
+      localStorage.setItem("notas", JSON.stringify(notas));
+      document.getElementById("nota").value = "";
+      
+      mostraNotas();
+    }
+
+    function mostraNotas () {
+      const lista = document.getElementById("listaNotas");
+      lista.innerHTML = "";
+      let notas = JSON.parse(localStorage.getItem("notas")) || [];
+
+      console.log(notas);
+
+      notas.forEach((nota, index) => {
+        const li = document.createElement("li");
+        li.innerHTML = `${nota} <span onclick="borrarNota(${index})"><img width="20px" src="borrar_2.png"></span>`;
+        lista.appendChild(li);
+      });
+    }
+    
+    function borrarNotas () {
+      localStorage.removeItem("notas");
+      mostraNotas();
+    }
+
+    function borrarNota (index) {
+      let notas = JSON.parse(localStorage.getItem("notas")) || [];
+      console.log(index);
+      notas.splice(index, 1);
+      console.log(notas);
+      localStorage.setItem("notas", JSON.stringify(notas));
+      mostraNotas ();
+    }
+
+    </script>
+</body>
+</html>
