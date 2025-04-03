@@ -1,0 +1,29 @@
+body {
+    background-color: #f3f4f5;
+
+}
+
+#data-container {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    gap: 15px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 6px 6px rgba(0,0,0,0.8);
+    align-content: center;
+}
+
+.card img {
+    max-width: 100px;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-top: 10 px;
+    text-transform: capitalize;
+}
