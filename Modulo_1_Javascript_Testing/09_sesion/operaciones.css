@@ -1,0 +1,30 @@
+body {
+    background-color: blueviolet;
+  }
+  
+  h1{
+    color: #333333;
+  }
+
+  h3 {
+    color: #333333;
+  }
+
+  p{
+    color: aqua;
+    font-size: 20px;
+    margin: 10px;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    width: 120px;
+  }
+
+  .parrafo-clase {
+    color: #f1f2f3;
+    font-size: 22px;
+    border: 5px solid lightgray;
+  }
+
+  .borders {
+    border-radius: 8px;
+  }
