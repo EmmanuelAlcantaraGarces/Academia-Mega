@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Clase 10</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <h1>Login Ficticio</h1>
+    <input type="text" id="username" placeholder="Usuario">
+    <input type="password" id="password" placeholder="Contraseña">
+    <br><br>
+    <button class="btn-login" onclick="login()">Iniciar Sesión</button>
+    &nbsp;
+    <button class="btn-logout" onclick="logout()">Cerrar Sesión</button>
+    <br><br>
+    <div id="mensaje"></div>
+    <script src="authModule.js"></script>
+    <script src="userSingleton.js"></script>
+    <script>
+        function login() {
+            // console.log("login");
+            const user = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            // console.log(user);
+            // console.log(password);
+
+            AuthModule.login(user, password);
+            console.log("Mensaje: " + AuthModule.getMessage());
+            showMessage(AuthModule.getMessage());
+        }
+
+        function logout() {
+            AuthModule.logout();
+            console.log("Mensaje: " + AuthModule.getMessage());
+            showMessage(AuthModule.getMessage());
+        }
+
+        function showMessage(mensaje) {
+            const divAviso = document.getElementById("mensaje");
+            const pMensaje = document.createElement("p");
+
+            pMensaje.className = "parrafo-clase borders";
+            pMensaje.textContent = mensaje;
+            
+            divAviso.innerHTML = "";
+            divAviso.appendChild(pMensaje);
+            setTimeout(() => {
+                divAviso.innerHTML = "";
+            }, 2000);
+        }
+
+    </script>
+</body>
+</html>
