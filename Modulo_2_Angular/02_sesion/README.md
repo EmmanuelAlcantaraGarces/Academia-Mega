@@ -1,6 +1,6 @@
 # Sesión 2 #
 
-## Compoentes en Angular ##
+## Componentes en Angular ##
 
 **Fecha:** 22/04/2025
 
