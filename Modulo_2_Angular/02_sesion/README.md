@@ -12,4 +12,4 @@ Conocer componentes en el framework Angular.
 
 Se explica lo que es un componente y como crear sus archivos de manera manual. Se enlaza al componente principal para su uso.
 
-Adicionalmente se crea un compoente empleando la utilidad de Angular. Tambien se enlaza al componente principal.
+Adicionalmente se crea un componente empleando la utilidad de Angular. Tambien se enlaza al componente principal.
