@@ -1,13 +1,15 @@
-# Sesión 9 #
+# Sesión 10 #
 
-## Relacion entre componentes tercera parte##
+## Servicios y ciclo de vida de los componentes ##
 
-**Fecha:** 02/05/2025
+**Fecha:** 05/05/2025
 
 **Objetivos de la Sesión:**
 
-Realizar proyecto interconectando tres componetes.
+Conocer que es un servicio y el ciclo de vida de los componentes en Angular.
 
 **Temas Cubiertos:**
 
-Se realiza un proyecto para implementación de la relacion Hijo-Padre entre tres componentes (uno es el padre y dos son hijo) generando intercambio de información entre los dos hijos a través del padre.
+Se explica el decorador <code>@Injectable</code> y los eventos que intervienen en el ciclo de vida de un componente.
+
+Adicionalmente se realiza un proyecto para implementar lo explicado, el proyecto es un componente padre y un hijo que usan un servicio para el intercambio de la información.
