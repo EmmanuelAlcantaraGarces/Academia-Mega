@@ -1,13 +1,13 @@
-# Sesión 11 #
+# Sesión 12 #
 
-## Login en API segunda parte ##
+## Login en el Aplicativo ##
 
-**Fecha:** 26/05/2025
+**Fecha:** 27/05/2025
 
 **Objetivos de la Sesión:**
 
-Finalizar la funcionalidad de login en el API.
+Implementar la funcionalidad de login en el aplicativo.
 
 **Temas Cubiertos:**
 
-Se finaliza el proyecto para implementar la funcionalidad de login en el API en una aplicacion Web de diseño MVC en C#.
+Se inicia la implementacón de la funcionalidad de login en la  aplicación Web.
