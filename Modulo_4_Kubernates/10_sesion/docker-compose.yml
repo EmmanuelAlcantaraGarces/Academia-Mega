@@ -1,0 +1,12 @@
+services:
+  json-srv-service:
+    build: .
+    #image: my-json-server
+    container_name: cont-json-server
+    ports:
+      - "3000:3000"
+    volumes:
+      - /usr/src/app
+      #- /usr/src/app/node_modules
+    #environment:
+      #- NODE_ENV=development
