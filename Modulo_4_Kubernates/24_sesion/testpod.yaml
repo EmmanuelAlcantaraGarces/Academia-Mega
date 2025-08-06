@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: testpod
+  namespace: demo
+  labels:
+    name: testpod
+spec:
+  containers:
+  - name: testpod
+    image: bitnami/kubectl:latest
+    resources: {}
+    stdin: true
+    tty: true
+  restartPolicy: Never
+  serviceAccountName: limited-sa
+  terminationGracePeriodSeconds: 30
+status: {}
