@@ -1,4 +1,4 @@
-# Sesión 24 #
+# Sesión 25 #
 
 ## Kubernetes - NetworkPolicy ##
 
